@@ -1,0 +1,211 @@
+@charset "utf-8";
+/*
+Name: Patricia Bialek
+Number: 0738386
+Assignment #6
+*/
+
+/*************************************
+COLORS USED:
+Desktop:
+- #ffe8d6
+- #6b705c
+- palevioletred
+- #cb997e
+
+Tablet:
+- #e0bacf
+- #1b2d52
+- lightgreen
+- #6281dc
+- #1b2d52
+
+Mobile:
+- #d77a61
+- #d8b4a0
+- #223843
+- grey
+
+**************************************/
+
+/*************************************
+FONTS USED:
+- font-family: Georgia, 'Times New Roman', Times, serif;
+- font-family: Verdana, Geneva, Tahoma, sans-serif;
+**************************************/
+
+/*************************************
+TABLE OF CONTENTS:
+1. Header
+2. Form
+3. Footer
+4. Responsive design
+**************************************/
+
+body{
+    margin: 0 40px;
+    background-color: #ffe8d6;
+}
+
+/*************************************
+1. HEADER
+**************************************/
+
+h1{
+    font-size: 4em;
+    margin: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #6b705c;
+}
+
+/*************************************
+2. FORM
+**************************************/
+
+.row {
+    display: flex;
+    margin-bottom: 30px;
+    
+}
+
+label{
+    /* flex: 1; */
+    padding-right: 10px;
+    flex-basis: 100px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: palevioletred;
+}
+
+input,textarea{
+    width: 500px;
+}
+
+input[type="radio"]{
+    width:20px;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #6b705c;
+    border-color: #6b705c;
+    color: #ffe8d6;
+}
+
+input[type="submit"]:hover{
+    background-color: #cb997e;
+    border-color: #cb997e;
+}
+
+/*************************************
+3. FOOTER
+**************************************/
+
+footer{
+    font-size: 1.5em;
+    position: absolute;
+    bottom:0;
+    margin: 20px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: palevioletred;
+}
+
+/*************************************
+4. RESPONSIVE DESIGN
+**************************************/
+
+/*************************************
+TABLET
+**************************************/
+@media screen and (max-width:1024px) {
+
+    body{
+        background-color: #1b2d52;
+    }
+
+    h1{
+        color: #6281dc;
+    }
+
+    footer{
+        font-size: 1.2em;
+        color: #6281dc;
+    }
+
+    input[type="submit"]{
+        background-color: #6281dc;
+        border-color: #6281dc;
+        color: #e0bacf;
+    }
+
+    input[type="submit"]:hover{
+        background-color: lightgreen;
+        border-color: lightgreen;
+        color: #1b2d52;
+    }
+
+    label{
+        color: #e0bacf;
+    }
+}
+
+/*************************************
+MOBILE
+**************************************/
+@media screen and (max-width:600px) {
+    body{
+        margin: 0 0;
+        background-color: #d8b4a0;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 2.5em;
+        color: #d77a61;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+        margin: 20px 20px;
+        font-size: 1em;
+        color: #d77a61;
+    }
+
+    input[type="submit"]{
+        background-color: #d77a61;
+        border-color: #d77a61;
+        color: #d8b4a0;
+    }
+
+    input[type="submit"]:hover{
+        background-color: #223843;
+        border-color: grey;
+        color: #d8b4a0;
+    }
+
+    .row {
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    label{
+        display: block;
+        margin-left: 20px;
+        padding-bottom: 5px;
+        color: #223843;
+    }
+
+    input,textarea{
+        width: 30em;
+        display: block;
+        margin: 0 auto;
+    }
+
+    input[type="radio"]{
+        display: inline;
+        margin-left: 20px;
+    }
+}

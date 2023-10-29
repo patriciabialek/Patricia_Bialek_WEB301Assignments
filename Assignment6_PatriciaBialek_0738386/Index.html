@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="">
+      <title>Web Forms</title>
+      <link href="CSS/myersReset.css" rel="stylesheet">
+      <link href="CSS/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+        <h1>Patricia Bialek</h1>
+    </header>
+
+    <div class="container"></div>
+        <form action="#" method="get">
+            <!-- firstname -->
+            <div class="row">
+                <label for="firstName">First Name: </label>
+                <input type="text" name="firstName" id="firstName" required>
+            </div>
+
+            <!-- lastname -->
+            <div class="row">
+                <label for="lastName">Last Name: </label>
+                <input type="text" name="lastName" id="lastName" required>
+            </div>
+
+            <!-- email -->
+            <div class="row">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="JohnDoe@hotmail.com" required>
+            </div>
+
+            <!-- phone -->
+            <div class="row">
+                <label for="phone">Phone: </label>
+                <input type="tel" name="tel" id="tel" placeholder="Format: 000-000-0000" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$">
+            </div>
+
+            <!-- comment textarea -->
+            <div class="row">
+                <label for="comment">Comments: </label>
+                <textarea name="comments" rows="7" cols="50"></textarea>
+            </div>
+
+            <!-- checkbox yes/no -->
+            <div class="row">
+                <label for="yes">Yes</label>
+                <input type="radio" name="course" id="yes" value="yes" required>
+            </div>
+
+            <div class="row">
+                <label for="no">No</label>
+                <input type="radio" name="course" id="no" value="no" required>
+            </div>
+
+            <!-- submit button -->
+            <input type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+
+    <footer>
+        &#169; Copyright 2023 - WEB301 - Created by <em>Patricia Bialek</em>
+    </footer>
+  </body>
+</html>
