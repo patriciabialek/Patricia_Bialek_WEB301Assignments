@@ -1,0 +1,185 @@
+@charset "utf-8";
+/*
+Name: Patricia Bialek
+Number: 0738386
+Assignment #6
+*/
+ 
+/*************************************
+TABLE OF CONTENTS:
+1. Swiper styles
+2. Header
+3. Form
+4. Footer
+5. Responsive design
+**************************************/
+
+/*************************************
+1. SWIPER STYLES
+**************************************/
+
+body{
+    width: 1400px;
+    background-color: #1b2d52;
+}
+
+.swiper-container {
+    margin:0 20px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.swiper-slide {
+margin: 0 20px;
+text-align: center;
+padding: 20px;
+}
+
+
+/*************************************
+2. HEADER
+**************************************/
+
+h1{
+    margin: 20px 0 40px 40px;
+    font-size: 4em;
+    color:aliceblue;
+}
+
+/*************************************
+3. FORM
+**************************************/
+.row{
+    display: flex;
+    margin-bottom: 30px;
+   
+}
+
+label{
+    padding-right: 10px;
+    flex-basis: 100px;
+    font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: plum;
+    border-color: plum;
+    color: #1b2d52;
+    position: absolute;
+    top: 200px;
+    left: 170px;
+}
+
+input[type="submit"]:hover{
+    background-color: lightcyan;
+    border-color:lightcyan;
+}
+
+#creditCardError{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
+}
+
+#cvvError{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:aliceblue;
+}
+ 
+/*************************************
+4. FOOTER
+**************************************/
+footer{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 40px;
+    font-size: 1.2em;
+    color:aliceblue;
+}
+/*************************************
+5. RESPONSIVE DESIGN
+**************************************/
+
+/*************************************
+MOBILE
+**************************************/
+@media screen and (max-width:600px){
+
+    body{
+        width: 600px;
+        background-color: beige;
+    }
+
+    .row {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    label{
+        display: block;
+        font-size: 2em;
+        padding-bottom: 5px;
+        color: palevioletred;
+    } 
+
+    input{
+        width: 400px;
+        height: 50px;
+    }
+
+    textarea{
+        width: 400px;
+        height: 50px;
+    }
+
+    h1{
+        text-align: center;
+        font-size: 3em;
+        color: purple;
+    }
+
+    footer{
+        display: block;
+        margin: 10px 20px;
+        font-size: 1em;
+        color: purple;
+    }
+
+    input[type="submit"]{
+        width: 100px;
+        height: 30px;
+        border-radius: 25px;
+        background-color: purple;
+        border-color: purple;
+        color: beige;
+        position: absolute;
+        top: 400px;
+        left: 250px;
+    }
+    
+    input[type="submit"]:hover{
+        background-color: pink;
+        border-color: pink;
+    }
+
+    .swiper-container {
+        margin: 0;
+    }
+    
+    .swiper-slide {
+        margin: 0;
+        padding: 0;
+    }
+
+    #creditCardError{
+        color:red;
+    }
+    
+    #cvvError{
+        color:red;
+    }
+}
