@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+Name: Patricia Bialek
+Number: 0738386
+Assignment #8
+*/
+
+.bg{
+    background-color:violet;
+}
+
+/*************************************
+TABLET
+**************************************/
+
+@media screen and (max-width:1024px){
+    .bg{
+        background-color:blanchedalmond;
+    }
+}
+
+
+/*************************************
+MOBILE
+**************************************/
+
+@media screen and (max-width:600px){
+    .bg{
+        background-color: black;
+    }
+}
